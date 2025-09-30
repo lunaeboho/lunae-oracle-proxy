@@ -1,9 +1,10 @@
 export default async function handler(req, res) {
-  const allowedOrigins = [
-    'https://lunaeboho.com',
-    'https://www.lunaeboho.com',
-    'http://localhost:9292'
-  ];
+ const allowedOrigins = [
+  'https://lunaeboho.com',
+  'https://www.lunaeboho.com',
+  'https://lunae-boho.myshopify.com',
+  'http://localhost:9292'
+];
   
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
